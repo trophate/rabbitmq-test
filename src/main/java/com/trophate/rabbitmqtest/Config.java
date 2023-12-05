@@ -236,7 +236,7 @@ public class Config {
 
     @Bean
     public Binding b13b() {
-        // #表示任意个任意词
+        // #表示一个或多个任意词
         return BindingBuilder.bind(q13()).to(e5()).with("#.big");
     }
 

@@ -104,7 +104,7 @@ public class Controller {
     }
 
     /**
-     * 直连交换机
+     * 直连交换机(路由)
      *
      * @return Result
      */
