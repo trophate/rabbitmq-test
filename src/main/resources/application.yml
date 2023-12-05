@@ -1,0 +1,6 @@
+#spring:
+#  rabbitmq:
+#    listener:
+#      simple:
+#        # 公平分发
+#        prefetch: 1
