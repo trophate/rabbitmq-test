@@ -1,11 +1,11 @@
-package com.trophate.rabbitmqtest;
+package com.trophate.rabbitmqtest.base;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class Config {
+public class BaseConfig {
 
     /**
      * 构建交换机
@@ -36,7 +36,7 @@ public class Config {
      */
     @Bean
     public Binding b1() {
-        return BindingBuilder.bind(q2()).to(e1()).with("toQ1");
+        return BindingBuilder.bind(q1()).to(e1()).with("toQ1");
     }
 
 

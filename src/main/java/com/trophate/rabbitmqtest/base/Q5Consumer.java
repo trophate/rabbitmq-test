@@ -1,4 +1,4 @@
-package com.trophate.rabbitmqtest;
+package com.trophate.rabbitmqtest.base;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

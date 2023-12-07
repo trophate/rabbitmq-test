@@ -1,13 +1,13 @@
-package com.trophate.rabbitmqtest;
+package com.trophate.rabbitmqtest.base;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Q7Consumer {
+public class Q6Consumer {
 
-    @RabbitListener(queues = "q7")
+    @RabbitListener(queues = "q6")
     public void process(String content) {
-        System.out.println("q7:" + content);
+        System.out.println("q6:" + content);
     }
 }

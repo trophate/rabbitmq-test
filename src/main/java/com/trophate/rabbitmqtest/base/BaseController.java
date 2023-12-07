@@ -1,4 +1,4 @@
-package com.trophate.rabbitmqtest;
+package com.trophate.rabbitmqtest.base;
 
 import com.trophate.rabbitmqtest.Result.Result;
 import org.springframework.amqp.core.Message;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class BaseController {
 
     private final RabbitTemplate rabbitTemplate;
 
-    public Controller(RabbitTemplate rabbitTemplate) {
+    public BaseController(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
     }
 
