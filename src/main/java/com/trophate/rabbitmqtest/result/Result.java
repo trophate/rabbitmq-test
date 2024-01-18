@@ -2,8 +2,17 @@ package com.trophate.rabbitmqtest.result;
 
 public class Result {
 
+    /**
+     * 状态码
+     */
     private int code;
+    /**
+     * 消息
+     */
     private String message;
+    /**
+     * 数据
+     */
     private Object data;
 
     public int getCode() {
@@ -33,7 +42,21 @@ public class Result {
         return this;
     }
 
+    /**
+     * 成功
+     *
+     * @return Result
+     */
     public static Result success() {
-        return new Result().setCode(0);
+        return new Result().setCode(DefaultResult.SUCCESS.getCode()).setMessage(DefaultResult.SUCCESS.getMessage());
+    }
+
+    /**
+     * 失败
+     *
+     * @return Result
+     */
+    public static Result fail() {
+        return new Result().setCode(DefaultResult.FAIL.getCode()).setMessage(DefaultResult.FAIL.getMessage());
     }
 }
