@@ -2,7 +2,7 @@ package com.trophate.rabbitmqtest.deal;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.trophate.rabbitmqtest.Result.Result;
+import com.trophate.rabbitmqtest.result.Result;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

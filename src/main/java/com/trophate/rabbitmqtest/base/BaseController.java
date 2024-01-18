@@ -1,6 +1,6 @@
 package com.trophate.rabbitmqtest.base;
 
-import com.trophate.rabbitmqtest.Result.Result;
+import com.trophate.rabbitmqtest.result.Result;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageDeliveryMode;
 import org.springframework.amqp.core.MessageProperties;

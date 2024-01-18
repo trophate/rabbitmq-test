@@ -1,4 +1,4 @@
-package com.trophate.rabbitmqtest.Result;
+package com.trophate.rabbitmqtest.result;
 
 public class Result {
 
