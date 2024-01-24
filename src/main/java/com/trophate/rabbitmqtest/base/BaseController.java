@@ -25,7 +25,7 @@ public class BaseController {
     @PostMapping("/t1")
     public Result t1() {
         // 生产者
-        rabbitTemplate.convertAndSend("toQ1", "生产者发送了一条消息");
+        rabbitTemplate.convertAndSend("toQ1", "消息");
         return Result.success();
     }
 
