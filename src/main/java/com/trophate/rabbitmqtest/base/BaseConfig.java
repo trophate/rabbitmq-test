@@ -101,7 +101,7 @@ public class BaseConfig {
     /**
      * 扇形交换机
      *
-     * @return DirectExchange
+     * @return FanoutExchange
      */
     @Bean
     public FanoutExchange e2() {
